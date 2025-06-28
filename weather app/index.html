@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card">
+      <div id="clock"></div>
+      <h1>Live Weather</h1>
+      <select id="citySelect" onchange="getWeather(this.value)">
+        <option value="Pune">Pune</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+      </select>
+      <div class="weather-info" id="weatherResult"></div>
+      <div class="forecast-title">3-Day Forecast</div>
+      <div class="forecast-container" id="forecast"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
